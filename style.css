@@ -1,10 +1,6 @@
-body{
-    overflow: hidden;
-}
 .container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    height: 100vh;
     text-align: center;
 }
 
@@ -17,13 +13,34 @@ body{
     margin-top: 100px;
 }
 
-.square{
+.square,
+.display{
     border: 3px solid black;
     position: relative;
     font-size: 85px;
 }
 
+.display:hover{
+    cursor: default;
+}
+
 .square:hover{
     background-color: lightgray;
     cursor: pointer;
+}
+
+.announcements{
+    padding-top: 15px;
+    height: 30px;
+    font-size: 24px;
+}
+
+.player1,
+.player2,
+.title{
+    font-size: 32px;
+}
+
+.controlls{
+    margin-top: 50px;
 }

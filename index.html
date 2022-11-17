@@ -10,9 +10,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="playerX">PLAYER 1</div>
+        <div class="playercontainer">
+            <div class="player1">PLAYER 1</div>
+            <div class="display">X</div>
+            <button class="changename controlls" onclick="p1.changeName(prompt('Change Name', p1.playerName))">Change Player</button>
+        </div>
+        
         <div class="gamearea">
             <div class="title">TIC-TAC-TOE</div>
+            <div class="announcements"></div>
             <div class="board">
                 <div class="square" id="s0"></div>
                 <div class="square" id="s1"></div>
@@ -24,8 +30,15 @@
                 <div class="square" id="s7"></div>
                 <div class="square" id="s8"></div>
             </div>
+            <div class="controlls">
+                <button onclick="gameStates.reset()">RESET</button>
+            </div>
         </div>
-        <div class="playerO">PLAYER 2</div>
+        <div class="playercontainer">
+            <div class="player2">PLAYER 2</div>
+            <div class="display">O</div>
+            <button class="changename controlls" onclick="p2.changeName(prompt('Change Name', p2.playerName))">Change Player</button>
+        </div>
     </div>
 </body>
 </html>
